@@ -4,13 +4,13 @@
 #define IN  1
 #define OUT 0
 
-void wordCount(void);
+void textInfo(void);
 
 void main() {
-  wordCount();
+  textInfo();
 }
 
-void wordCount(void){
+void textInfo(void){
   int c,wc,cc,nl,bc = 0;
   int state = OUT;
 
