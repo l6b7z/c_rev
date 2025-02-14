@@ -44,7 +44,7 @@ void mergeRepeatingChar(int specialChar){
 }
 
 const char* swapCharString(int specialChar, char swapChar[]){
-  char *string = malloc(80);
+  char *string = malloc(80); // leak
   int c,skip = 0;
   char a;
   printf("%s%c%s%s%s\n","swapping ->[",specialChar,"] for ->[",swapChar,"]");

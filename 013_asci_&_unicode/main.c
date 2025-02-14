@@ -23,8 +23,8 @@ void main(){
 
   /* printEscapeChar(); */
   /* printTriforce(); */
-  printf("Ascii Table\n");
-  printAsciiTable();
+  /* printf("Ascii Table\n"); */
+  /* printAsciiTable(); */
   /* printf("\nUnicode Table\n"); */
   /* printUnicodeTable(32, 191); */
 }
