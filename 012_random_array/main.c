@@ -1,3 +1,5 @@
+/* the goal is to calculate size of 2d array */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

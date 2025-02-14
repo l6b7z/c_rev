@@ -105,8 +105,6 @@ void testingCalloc(){
   }
   putchar('\n');
 
-  // This malloc requests 1 terabyte of dynamic memory,
-  // which is unavailable in this case, and so the
   // allocation fails and returns NULL.
   int* failed_malloc = malloc(1000000000000);
   if (failed_malloc == NULL) {

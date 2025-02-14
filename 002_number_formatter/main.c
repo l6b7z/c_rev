@@ -9,17 +9,11 @@ int biggestDigit(int nums[]);
 void printArr(int nums[]);
 void buildFMT(int maxDigit,int val);
 
-/* doesn't account for big nums */
-/* todo type checking / safety statement */
 
 void main() {
-  testPrint();
-
+  /* testPrint(); */
   int nums[] = {123,1234,1232122456};
-
   printArr(nums);
-  biggestDigit(nums);
-
 }
 
 void testPrint(void){

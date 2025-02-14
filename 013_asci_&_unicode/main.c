@@ -21,10 +21,13 @@ void printLoop(int start, int end);
 void main(){
   setlocale(LC_ALL,"");
 
-  /* printEscapeChar(); */
+  /* printEscapeChars(); */
+
   /* printTriforce(); */
+
   /* printf("Ascii Table\n"); */
   /* printAsciiTable(); */
+
   /* printf("\nUnicode Table\n"); */
   /* printUnicodeTable(32, 191); */
 }

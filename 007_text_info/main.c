@@ -1,13 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define IN  1
-#define OUT 0
+#define IN        1
+#define OUT       0
 
-void textInfo(void);
+int wordCount(void);
+void textInfo(void); // counts lines,words, characters and whitspace every line
 
 void main() {
-  textInfo();
+  /* wordCount(); */
+  /* textInfo(); */
+}
+
+int wordCount(void){
+  int c,wc,cc = 0;
+  int state = OUT;
+  while((c = getchar()) != EOF){
+      if(c == ' ' || c == '\t'){
+        state = OUT;
+      }
+      else{
+        if(state == OUT){
+          wc++;
+        }
+        state = IN;
+      }
+    if( c == '\n'){
+      printf("word count =%d\n",wc);
+      return wc;
+    }
+  }
 }
 
 void textInfo(void){
