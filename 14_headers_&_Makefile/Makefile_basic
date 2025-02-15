@@ -1,0 +1,13 @@
+CC=gcc
+CFLAGS=
+
+all: install rm_obj
+
+intArr.o:
+	$(CC) $(CFLAGS) -c intArr.c
+
+install: intArr.o main.c
+	$(CC) $(CFLAGS) -o main main.c intArr.o
+
+clean:
+	rm *.o main
