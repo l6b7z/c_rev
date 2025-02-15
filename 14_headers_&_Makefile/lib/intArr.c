@@ -1,18 +1,6 @@
 #include <stdio.h>
 #include "intArr.h"
 
-/* void printArr(int *a, int size_t); */
-/* void swap(int* n1p, int* n2p); */
-/* void sortArr(int *a,int size_t); */
-
-/* void main(){ */
-/*   int a[] = {1,2,3,45,5}; */
-/*   int size = 5; */
-/*   printArr(a, 5); */
-/*   sortArr(a, 5); */
-/*   printArr(a, 5); */
-/* } */
-
 void printArr(int *a, int size_t){
   printf("arr[%d] = {",size_t);
   if (size_t == 0){

@@ -9,6 +9,13 @@ void main(){
   int n = sizeof(a)/sizeof(int);
   sortArr(a,n);
   printArr(a,n);
-  /* swap(a[0], a[1]); */ // no definition in header file cannot be used
 
+  n = sizeof(b)/sizeof(int);
+  sortArr(b,n);
+  printArr(b,n);
+
+  n = sizeof(c)/sizeof(int);
+  sortArr(c,n);
+  printArr(c,n);
+  /* swap(a[0], a[1]); */ // no definition in header file cannot be used
 }

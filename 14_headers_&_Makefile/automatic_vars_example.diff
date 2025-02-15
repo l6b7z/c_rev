@@ -1,0 +1,29 @@
+--- Makefile~1	2022-22-22 22:22:22.222222222 +0100
++++ Makefile~2	2022-22-22 22:22:22.222222222 +0100
+@@ -2,10 +2,10 @@
+ all: main
+ 
+ main: main.o intArr.o
+-	$(CC) -o $@ main.c intArr.o
++	$(CC) -o $@ $^
+ 
+ main.o: main.c
+-	$(CC) -c main.c -o $@
++	$(CC) -c $< -o $@
+ 
+ intArr.o: intArr.c
+-	$(CC) -c intArr.c -o $@
++	$(CC) -c $< -o $@
+
+--- Makefile~2	2022-22-22 22:22:22.222222222 +0100
++++ Makefile~3	2022-22-22 22:22:22.222222222 +0100
+@@ -4,8 +4,5 @@
+ main: main.o intArr.o
+ 	$(CC) -o $@ $^
+ 
+-main.o: main.c
+-	$(CC) -c $< -o $@
+-
+-intArr.o: intArr.c
++%.o: %.c
+ 	$(CC) -c $< -o $@
