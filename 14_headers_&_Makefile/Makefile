@@ -6,7 +6,7 @@ INCDIRS=. ./include/
 PATCH_NAME=patch
 
 CC=gcc
-OPT=
+OPT=-s
 # dependencies flags for compiler 
 # so that make can recompile program when dependencies chane
 DEPFLAGS=-MP -MD

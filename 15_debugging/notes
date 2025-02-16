@@ -1,0 +1,18 @@
+debugger gdb
+compilation flag -g 
+
+disassemble     shows assembly code 
+list            shows src code linked to a binary with line numbers
+break           sets breakpoint {line/functio name}
+clear           removes breakpoint
+watch           watch variable when it changes
+run             runs program
+print           prints value of variable 
+step            steps into a function call
+next            steps over a function call
+continue        continue till next breakpoint / watchpoint
+<enter>         repeats last command
+
+refresh         refresh display
+print *arr@len
+
